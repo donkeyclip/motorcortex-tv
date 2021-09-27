@@ -1,4 +1,4 @@
-import { HTMLClip, loadPlugin } from "@kissmybutton/motorcortex";
+import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex";
 import canvasClipPluginDefinition from "../internalPlugins/canvasClip/main";
 const CanvasClipPlugin = loadPlugin(canvasClipPluginDefinition);
 

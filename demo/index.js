@@ -1,5 +1,5 @@
-import Player from "@kissmybutton/motorcortex-player";
-import { HTMLClip, loadPlugin } from "@kissmybutton/motorcortex/";
+import Player from "@donkeyclip/motorcortex-player";
+import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex/";
 import TVPluginDef from "../dist/motorcortex-tv.umd";
 const TVPlugin = loadPlugin(TVPluginDef);
 
