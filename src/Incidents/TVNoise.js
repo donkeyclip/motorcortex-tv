@@ -1,4 +1,4 @@
-import { HTMLClip, loadPlugin, AudioPlayback } from "@kissmybutton/motorcortex";
+import { HTMLClip, loadPlugin, AudioPlayback } from "@donkeyclip/motorcortex";
 import NoiseEffectDef from "../internalPlugins/noiseEffect/main";
 const NoiseEffectPlugin = loadPlugin(NoiseEffectDef);
 

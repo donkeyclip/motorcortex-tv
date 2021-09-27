@@ -1,4 +1,4 @@
-import { Effect } from "@kissmybutton/motorcortex";
+import { Effect } from "@donkeyclip/motorcortex";
 
 export default class NoiseEffect extends Effect {
   onGetContext() {
@@ -22,8 +22,12 @@ export default class NoiseEffect extends Effect {
     for (let i = 0, n = pix.length; i < n; i += 12) {
       const c =
         6 + Math.sin(i / 60000 + (this.time % this.element.height) / 10);
-      pix[i] = pix[i + 1] = pix[i + 2] = pix[i + 3] = pix[i + 4] =
-        40 * Math.random() * c;
+      pix[i] =
+        pix[i + 1] =
+        pix[i + 2] =
+        pix[i + 3] =
+        pix[i + 4] =
+          40 * Math.random() * c;
       pix[i + 5] = 255;
     }
 
