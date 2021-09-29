@@ -2,21 +2,21 @@
 
 ## Demo
 
-[Check it out here](https://kissmybutton.github.io/motorcortex-tv/demo/index.html)
+[Check it out here](https://donkeyclip.github.io/motorcortex-tv/demo/index.html)
 
 ## Installation
 
 ```bash
-$ npm install --save @kissmybutton/motorcortex-tv
+$ npm install --save @donkeyclip/motorcortex-tv
 # OR
-$ yarn add @kissmybutton/motorcortex-tv
+$ yarn add @donkeyclip/motorcortex-tv
 ```
 
 ## Loading
 
 ```javascript
-import { loadPlugin } from "@kissmybutton/motorcortex";
-import tvDefinition from "@kissmybutton/motorcortex-abstracts";
+import { loadPlugin } from "@donkeyclip/motorcortex";
+import tvDefinition from "@donkeyclip/motorcortex-abstracts";
 const Plugin = loadPlugin(tvDefinition);
 ```
 
