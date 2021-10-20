@@ -28,11 +28,11 @@ export default [
       },
     ],
     plugins: [
+      json(),
       nodeResolve({ mainFields: ["module", "main", "browser"] }),
       commonjs(),
       babel(),
       terser(),
-      json(),
     ],
   },
 ];
