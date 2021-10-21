@@ -1,6 +1,6 @@
 import Player from "@donkeyclip/motorcortex-player";
 import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex/";
-import TVPluginDef from "../dist/motorcortex-tv.umd";
+import TVPluginDef from "../dist/motorcortex-tv.esm";
 const TVPlugin = loadPlugin(TVPluginDef);
 
 const myClip = new HTMLClip({
