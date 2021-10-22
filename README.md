@@ -40,12 +40,12 @@ const tvNoise = new TVPlugin.TVNoise(
 
 ### CrossMoveRight Attrs
 
-| Name           |                   Are                   |                Values |
-| -------------- | :-------------------------------------: | --------------------: |
-| width          |            width of the canvas          |                   num |
-| height         |           height of the canvas          |                   num |
-| duration       |        the duration of the effect       |                   num |
-| sound          |          iclude noise sound or not      |                   bool|
+| Name     |            Are             | Values |
+| -------- | :------------------------: | -----: |
+| width    |    width of the canvas     |    num |
+| height   |    height of the canvas    |    num |
+| duration | the duration of the effect |    num |
+| sound    | iclude noise sound or not  |   bool |
 
 ## imageGlitch
 
@@ -67,6 +67,12 @@ const imageGlitch = new TVPlugin.ImageGlitch(
 
 ### CrossMoveRightOutline Attrs
 
-| Name           |                       Are                       |                Values |
-| -------------- | :---------------------------------------------: | --------------------: |
-| imgUrl         |    the image url to apply the effect on         |                   url |
+| Name   |                 Are                  | Values |
+| ------ | :----------------------------------: | -----: |
+| imgUrl | the image url to apply the effect on |    url |
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+[<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
