@@ -10,7 +10,7 @@
   - [Importing and Loading](#importing-and-loading)
 - [Creating Incidents](#creating-incidents)
   - [TVNoise](#tvnoise)
-  - [imageGlitch](#imageglitch)
+  - [ImageGlitch](#imageglitch)
 - [Adding Incidents in your clip](#adding-incidents-in-your-clip)
 - [Contributing](#contributing)
 - [License](#license)
@@ -21,10 +21,11 @@
 [Check it out here](https://donkeyclip.github.io/motorcortex-tv/demo/index.html)
 
 # Intro / Features
+Using MotorCortex-Τv your clip will look like a TV without signal. 
 
 This Plugin exposes two incidents:
 - TVNoise
-- imageGlitch
+- ImageGlitch
 # Getting Started
 
 ## Installation
@@ -88,7 +89,7 @@ const imageGlitch = new TVPlugin.ImageGlitch(
 );
 ```
 
-### imageGlitch Attrs
+### ImageGlitch Attrs
 
 | Name   |                 Are                  | Values |
 | ------ | :----------------------------------: | -----: |
