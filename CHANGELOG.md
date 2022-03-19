@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.0.3](https://github.com/donkeyclip/motorcortex-tv/compare/v0.0.2...v0.0.3) (2022-03-19)
+
+
+### Bug Fixes
+
+* drop code from demo config ([48b51da](https://github.com/donkeyclip/motorcortex-tv/commit/48b51dae2d50bd7a1a845e4c47a5ed113331abaa))
+* fix broken config ([790df76](https://github.com/donkeyclip/motorcortex-tv/commit/790df76bf8edaff090ccda7225f405ef943a36f1))
+* fix broken webpack config ([a85d668](https://github.com/donkeyclip/motorcortex-tv/commit/a85d66832ebbff40526cfea3e083be07060cb8ff))
+* update build and demo files drop old babel config ([f4c2e4f](https://github.com/donkeyclip/motorcortex-tv/commit/f4c2e4ff1e7a1bedcc668fe89200ad790b71ad6e))
+
 ### 0.0.2 (2021-09-30)
 
 
