@@ -1273,7 +1273,7 @@ var NoiseEffect = /*#__PURE__*/function (_Effect) {
     }
   }, {
     key: "onProgress",
-    value: function onProgress(fr, ms) {
+    value: function onProgress(ms) {
       var time = Math.round(ms / 20);
 
       if (time === this.time) {
