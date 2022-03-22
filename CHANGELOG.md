@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/donkeyclip/motorcortex-tv/compare/v0.0.3...v0.1.0) (2022-03-22)
+
+
+### Features
+
+* declare mc 8 as compatible ([ff059b4](https://github.com/donkeyclip/motorcortex-tv/commit/ff059b4e9416f8799f9c84b9211acca3c3dcc448))
+
 ### [0.0.3](https://github.com/donkeyclip/motorcortex-tv/compare/v0.0.2...v0.0.3) (2022-03-19)
 
 
