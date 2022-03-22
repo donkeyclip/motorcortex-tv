@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "lint": "eslint -c .eslintrc src/**/*.js",
@@ -62,7 +62,7 @@
     }
   },
   "peerDependencies": {
-    "@donkeyclip/motorcortex": "^7"
+    "@donkeyclip/motorcortex": ">= 8 < 9"
   },
   "devDependencies": {
     "@babel/cli": "7.17.6",
@@ -73,7 +73,7 @@
     "@babel/preset-env": "7.16.11",
     "@commitlint/cli": "13.2.1",
     "@commitlint/config-conventional": "13.2.0",
-    "@donkeyclip/motorcortex": "7.9.3",
+    "@donkeyclip/motorcortex": "8.0.1",
     "@donkeyclip/motorcortex-player": "2.5.2",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "21.0.2",

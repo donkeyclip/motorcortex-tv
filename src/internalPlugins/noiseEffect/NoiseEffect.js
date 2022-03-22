@@ -6,7 +6,7 @@ export default class NoiseEffect extends Effect {
     this.canvasContext = this.element.getContext("2d");
   }
 
-  onProgress(fr, ms) {
+  onProgress(ms) {
     const time = Math.round(ms / 20);
     if (time === this.time) {
       return;
