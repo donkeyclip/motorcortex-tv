@@ -1545,7 +1545,7 @@ var ImageGlitch = /*#__PURE__*/function (_HTMLClip) {
 }(HTMLClip);
 
 var name = "@donkeyclip/motorcortex-tv";
-var version = "0.0.3";
+var version = "0.1.0";
 
 var index = {
   npm_name: name,
