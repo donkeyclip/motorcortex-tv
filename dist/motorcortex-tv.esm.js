@@ -151,7 +151,7 @@ class ImageGlitch extends HTMLClip {
 }
 
 var name = "@donkeyclip/motorcortex-tv";
-var version = "0.1.0";
+var version = "0.2.0";
 
 var index = {
   npm_name: name,

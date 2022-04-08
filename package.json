@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-tv",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TV animations for MotorCortex",
   "main": "dist/motorcortex-tv.cjs.js",
   "module": "dist/motorcortex-tv.esm.js",
