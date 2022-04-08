@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0](https://github.com/donkeyclip/motorcortex-tv/compare/v0.1.0...v0.2.0) (2022-04-08)
+
+
+### Features
+
+* drop explorer 11 support ([2597f22](https://github.com/donkeyclip/motorcortex-tv/commit/2597f22c6c76b24000ceeb6776b50437a30caf68))
+* update compatibility with motorcortex ([63cc932](https://github.com/donkeyclip/motorcortex-tv/commit/63cc932055442f336611a154847ec93436c1b48b))
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([831bd84](https://github.com/donkeyclip/motorcortex-tv/commit/831bd845abc9acacca05487b10cb3b2653fbad1d))
+
 ## [0.1.0](https://github.com/donkeyclip/motorcortex-tv/compare/v0.0.3...v0.1.0) (2022-03-22)
 
 
