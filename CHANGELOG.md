@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/donkeyclip/motorcortex-tv/compare/v0.2.0...v0.3.0) (2022-04-29)
+
+
+### Features
+
+* update mc to v9 ([71438eb](https://github.com/donkeyclip/motorcortex-tv/commit/71438eba58fa452cf26cdd25f557cc78e01ea616))
+
 ## [0.2.0](https://github.com/donkeyclip/motorcortex-tv/compare/v0.1.0...v0.2.0) (2022-04-08)
 
 
