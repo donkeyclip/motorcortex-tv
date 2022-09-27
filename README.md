@@ -40,8 +40,8 @@ $ yarn add @donkeyclip/motorcortex-tv
 
 ```javascript
 import { loadPlugin } from "@donkeyclip/motorcortex";
-import tvDefinition from "@donkeyclip/motorcortex-abstracts";
-const Plugin = loadPlugin(tvDefinition);
+import tvDefinition from "@donkeyclip/motorcortex-tv";
+const TV = loadPlugin(tvDefinition);
 ```
 
 # Creating Incidents
@@ -49,7 +49,7 @@ const Plugin = loadPlugin(tvDefinition);
 ## TVNoise
 
 ```javascript
-const tvNoise = new TVPlugin.TVNoise(
+const tvNoise = new TV.TVNoise(
   {
     width: 800,
     height: 600,
@@ -74,7 +74,7 @@ const tvNoise = new TVPlugin.TVNoise(
 ## imageGlitch
 
 ```javascript
-const imageGlitch = new TVPlugin.ImageGlitch(
+const imageGlitch = new TV.ImageGlitch(
   {
     imgUrl:
       "https://images.hdqwalls.com/wallpapers/minimal-sunset-landscape-4k-w5.jpg",
