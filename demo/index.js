@@ -7,11 +7,10 @@ const myClip = new HTMLClip({
   html: `
     <div>
       <div id="container"></div>
-      <div id="glitchContainer"></div>
     </div>
   `,
   css: `
-    #container, #glitchContainer{
+    #container{
       width: 800px;
       height: 600px;
     }
@@ -19,7 +18,7 @@ const myClip = new HTMLClip({
   host: document.getElementById("clip"),
   containerParams: {
     width: "800px",
-    height: "1200px",
+    height: "600px",
   },
 });
 
@@ -35,20 +34,5 @@ const tvNoise = new TVPlugin.TVNoise(
   }
 );
 
-const imageGlitch = new TVPlugin.ImageGlitch(
-  {
-    imgUrl:
-      "https://images.hdqwalls.com/wallpapers/minimal-sunset-landscape-4k-w5.jpg",
-  },
-  {
-    selector: "#glitchContainer",
-    containerParams: {
-      width: "800px",
-      height: "600px",
-    },
-  }
-);
-
 myClip.addIncident(tvNoise, 0);
-myClip.addIncident(imageGlitch, 0);
 new Player({ clip: myClip });
