@@ -40,11 +40,19 @@ const sound = "SUQzAwAAAAAAOlRJVDIAAAAKAAAAVFYgU3RhdGljVFBFMQAAAAwAAABNaWtlIEtvZ
 const NoiseEffectPlugin = loadPlugin(NoiseEffectDef);
 class TVNoise extends HTMLClip {
   get html() {
-    return "\n      <div class=\"bg\">\n          <canvas id=\"tv\" width=\"".concat(this.attrs.width, "\" height=\"").concat(this.attrs.height, "\"></canvas>\n      </div>\n    ");
+    return `
+      <div class="bg">
+          <canvas id="tv" width="${this.attrs.width}" height="${this.attrs.height}"></canvas>
+      </div>
+    `;
   }
 
   get css() {
-    return "\n      .bg{\n          background: black;\n      }\n    ";
+    return `
+      .bg{
+          background: black;
+      }
+    `;
   }
 
   get audioSources() {
@@ -111,7 +119,7 @@ class ImageGlitch$1 extends BrowserClip {
   }
 
   get html() {
-    return "<canvas width=\"".concat(parseInt(this.props.containerParams.width), "\" height=\"").concat(parseInt(this.props.containerParams.height), "\"></canvas>");
+    return `<canvas width="${parseInt(this.props.containerParams.width)}" height="${parseInt(this.props.containerParams.height)}"></canvas>`;
   }
 
 }
@@ -131,11 +139,16 @@ var canvasClipPluginDefinition = {
 const CanvasClipPlugin = loadPlugin(canvasClipPluginDefinition);
 class ImageGlitch extends HTMLClip {
   get html() {
-    return "<div id=\"canvasClipContainer\"></div>";
+    return `<div id="canvasClipContainer"></div>`;
   }
 
   get css() {
-    return "\n      #canvasClipContainer{\n          width: ".concat(this.props.containerParams.width, ";\n          height: ").concat(this.props.containerParams.height, ";\n      }\n    ");
+    return `
+      #canvasClipContainer{
+          width: ${this.props.containerParams.width};
+          height: ${this.props.containerParams.height};
+      }
+    `;
   }
 
   buildTree() {
