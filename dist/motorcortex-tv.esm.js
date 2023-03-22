@@ -5,27 +5,21 @@ class NoiseEffect extends Effect {
     this.time = 0;
     this.canvasContext = this.element.getContext("2d");
   }
-
   onProgress(ms) {
     const time = Math.round(ms / 20);
-
     if (time === this.time) {
       return;
     }
-
     this.time = time;
     const imgd = this.canvasContext.createImageData(this.element.width, this.element.height);
     const pix = imgd.data;
-
     for (let i = 0, n = pix.length; i < n; i += 12) {
       const c = 6 + Math.sin(i / 60000 + this.time % this.element.height / 10);
       pix[i] = pix[i + 1] = pix[i + 2] = pix[i + 3] = pix[i + 4] = 40 * Math.random() * c;
       pix[i + 5] = 255;
     }
-
     this.canvasContext.putImageData(imgd, 0, 0);
   }
-
 }
 
 var NoiseEffectDef = {
@@ -46,7 +40,6 @@ class TVNoise extends HTMLClip {
       </div>
     `;
   }
-
   get css() {
     return `
       .bg{
@@ -54,7 +47,6 @@ class TVNoise extends HTMLClip {
       }
     `;
   }
-
   get audioSources() {
     return [{
       src: sound,
@@ -62,7 +54,6 @@ class TVNoise extends HTMLClip {
       id: "static"
     }];
   }
-
   buildTree() {
     const duration = this.props.duration || 2000;
     const noiseEffect = new NoiseEffectPlugin.NoiseEffect({
@@ -74,7 +65,6 @@ class TVNoise extends HTMLClip {
       duration
     });
     this.addIncident(noiseEffect, 0);
-
     if (this.attrs.sound === true) {
       for (let i = 0; i < duration - 4000; i += 4000) {
         const sound = new AudioPlayback({
@@ -83,7 +73,6 @@ class TVNoise extends HTMLClip {
         });
         this.addIncident(sound, i * 4000);
       }
-
       const leftovers = duration % 4000;
       const leftoverSound = new AudioPlayback({
         selector: "~#static",
@@ -92,36 +81,36 @@ class TVNoise extends HTMLClip {
       this.addIncident(leftoverSound, this.attrs.duration - leftovers);
     }
   }
-
 }
 
 class ImageGlitch$1 extends BrowserClip {
   onAfterRender() {
-    this.contextLoading(); // create a canvas
-
+    this.contextLoading();
+    // create a canvas
     const canvas = this.context.getElements("canvas")[0];
     const ctx = canvas.getContext("2d");
     this.setCustomEntity("canvas", ctx);
     const img = new Image();
-
     img.onload = () => {
       this.context.image = img;
-      ctx.drawImage(img, // image
-      0, // position
-      0, // position
-      img.width, // original image width
-      img.height, // original image height
+      ctx.drawImage(img,
+      // image
+      0,
+      // position
+      0,
+      // position
+      img.width,
+      // original image width
+      img.height,
+      // original image height
       0, 0, canvas.width, canvas.height);
       this.contextLoaded();
     };
-
     img.src = this.attrs.imgUrl;
   }
-
   get html() {
     return `<canvas width="${parseInt(this.props.containerParams.width)}" height="${parseInt(this.props.containerParams.height)}"></canvas>`;
   }
-
 }
 
 var canvasClipPluginDefinition = {
@@ -141,7 +130,6 @@ class ImageGlitch extends HTMLClip {
   get html() {
     return `<div id="canvasClipContainer"></div>`;
   }
-
   get css() {
     return `
       #canvasClipContainer{
@@ -150,7 +138,6 @@ class ImageGlitch extends HTMLClip {
       }
     `;
   }
-
   buildTree() {
     const canvasClip = new CanvasClipPlugin.Clip({
       imgUrl: this.attrs.imgUrl
@@ -160,7 +147,6 @@ class ImageGlitch extends HTMLClip {
     });
     this.addIncident(canvasClip, 0);
   }
-
 }
 
 var name = "@donkeyclip/motorcortex-tv";
