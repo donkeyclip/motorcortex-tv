@@ -84,7 +84,7 @@
     "@semantic-release/github": "8.0.7",
     "@semantic-release/npm": "8.0.3",
     "@size-limit/preset-big-lib": "6.0.4",
-    "babel-loader": "8.2.5",
+    "babel-loader": "8.3.0",
     "browserslist": "4.20.3",
     "caniuse-lite": "1.0.30001469",
     "commitizen": "4.2.4",
