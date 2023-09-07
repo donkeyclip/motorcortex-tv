@@ -89,7 +89,7 @@
     "caniuse-lite": "1.0.30001528",
     "commitizen": "4.3.0",
     "concurrently": "6.5.1",
-    "core-js": "3.30.2",
+    "core-js": "3.32.1",
     "css-loader": "6.8.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.32.0",
