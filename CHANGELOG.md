@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/donkeyclip/motorcortex-tv/compare/v0.3.0...v0.3.1) (2024-04-03)
+
+
+### Bug Fixes
+
+* fix demo ([7425db0](https://github.com/donkeyclip/motorcortex-tv/commit/7425db0ad8d8be6d8d484e213a4e432fda0589b5))
+
 ## [0.3.0](https://github.com/donkeyclip/motorcortex-tv/compare/v0.2.0...v0.3.0) (2022-04-29)
 
 
